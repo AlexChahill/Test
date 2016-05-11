@@ -40,25 +40,25 @@ class Clouds extends GameObject
     //wrap
     if ( cloudX1 < -75)
     {
-      cloudX1 = width - cloud1x;
+      cloudX1 = width - cloud1x + 50;
       cloudX1 -= 1* random (0, 1.25) ;
       cloudY1 = random (0, 250);
     }
     if ( cloudX2 < -75)
     {
-      cloudX2 = width - cloud1x;
+      cloudX2 = width - cloud1x + 50;
       cloudX2 -= 1* random (0, 1.25) ;
       cloudY2 = random (0, 250);
     }
     if ( cloudX3 < -75)
     {
-      cloudX3 = width - cloud1x;
+      cloudX3 = width - cloud1x + 50;
       cloudX3 -= 1* random (0, 1.25) ;
       cloudY3 = random (0, 250);
     }
     if ( cloudX4 < -75)
     {
-      cloudX4 = width - cloud1x;
+      cloudX4 = width - cloud1x + 50;
       cloudX4 -= 1* random (0, 1.25) ;
       cloudY4 = random (0, 250);
     }
