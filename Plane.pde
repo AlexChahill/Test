@@ -6,6 +6,7 @@ class Plane extends GameObject
 
   void drawPlane ()
   {
+    pushMatrix ();
     //body
     stroke (130);
     fill (130);
@@ -14,12 +15,20 @@ class Plane extends GameObject
     rect (wingposX, wingposY, wing, wing);
     rect (wingposX, bttmwingposY, wing, wing);
     // windows
-    for (int x = 25; x < 90; x += 30)
+    for (int windowX = 25; windowX < 90; windowX += 30)
     {
       stroke (0);
       fill (0);
-      rect (x, windowY, window, window);
+      rect (windowX, windowY, window, window);
     }
+    popMatrix ();
+  }
+
+  void update ()
+  {
+    planeposX ++;
+    wingposX ++;
+    windowX ++;
   }
 }
 
