@@ -16,11 +16,12 @@ class GameObject
   float windowY = planeposY + 7.5;
   float window = 15;
   float windowX = 25;
-  
+
   //bomb
   float bombX = planeposX + 45;
-  float bombY = planeposY;
+  float bombY = planeposY + 30;
   float bomb = 10;
+  float landing = random (300,400);
 
   //clouds
   float r1 = random (.5, 2.5);
@@ -42,5 +43,18 @@ class GameObject
   float cloudY2 = random (0, 250);
   float cloudY3 = random (0, 250);
   float cloudY4 = random (0, 250);
+
+  //Person
+  float head = 10;
+  float personX = 75;
+  float personY = 400;
+  float bodyX = personX - 6;
+  float bodyY = personY + 10;
+  float bodyH = 20;
+  float bodyW = 12;
+  float armX = personX - 6;
+  float armY = personY + 17;
+  float legX = personX - 2.5;
+  float legY = personY + 30;
 }
 

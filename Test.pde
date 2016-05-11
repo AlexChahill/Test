@@ -6,6 +6,7 @@ void setup ()
   plane = new Plane ();
   clouds = new Clouds ();
   person = new Person ();
+  bomb = new Bomb ();
 }
 
 Environment environment;
@@ -13,6 +14,7 @@ GameObject gameObject;
 Plane plane;
 Clouds clouds;
 Person person;
+Bomb bomb;
 
 void draw ()
 {
@@ -22,5 +24,6 @@ void draw ()
   clouds.drawClouds ();
   clouds.updateClouds ();
   person.drawPerson ();
+  bomb.update();
 }
 

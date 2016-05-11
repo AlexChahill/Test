@@ -46,20 +46,11 @@ class Plane extends GameObject
       windowY = planeposY + 7.5;
       window = 15;
       windowX = planeposX + 7.5;
+      bombX = planeposX + 45;
+      bombY = planeposY + 30;
     }
 
-    //Bomb
-    
-     if (keyPressed)
-  {
-    if (key == ' ')
-    { 
-      stroke (0);
-      fill (255,0,0);
-      rect (bombX, bombY, bomb, bomb);
-    }
 
   }
-}
 }
 

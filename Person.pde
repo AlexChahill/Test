@@ -6,18 +6,6 @@ class Person extends GameObject
 
   void drawPerson ()
   {
-    float head = 10;
-    float personX = 75;
-    float personY = 400;
-    float bodyX = personX - 6;
-    float bodyY = personY + 10;
-    float bodyH = 20;
-    float bodyW = 12;
-    float armX = personX - 6;
-    float armY = personY + 17;
-    float legX = personX - 2.5;
-    float legY = personY + 30;
-    
     stroke (0);
     fill (#FA00E1);
     //head
