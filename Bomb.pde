@@ -11,20 +11,22 @@ class Bomb extends GameObject
     {
       if (key == ' ')
       { 
+        bombFall = true;
+      } else
+      {
+        bombFall = false;
+      }
+      if (bombFall = true)
+      {
         stroke (0);
         fill (255, 0, 0);
         rect (bombX, bombY, bomb, bomb);
-        bombY +=3;
-        
       }
     }
-    if (bombY == 300)
+    if (bombY < 350 && bombFall != false)
     {
-     bombY += 0.0001; 
+      bombY +=3;
     }
-
-
-    
   }
 }
 

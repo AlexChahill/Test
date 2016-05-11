@@ -23,5 +23,14 @@ class Person extends GameObject
     line (legX, legY, legX, legY + 10);
     line (legX + 5, legY, legX + 5, legY + 10);
   }
+
+  void update ()
+  {
+    if (bombY > 348)
+    {
+      personX = bombX;
+      personY = 350;
+    }
+  }
 }
 

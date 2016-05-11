@@ -15,6 +15,7 @@ class Plane extends GameObject
     //wings
     rect (wingposX, wingposY, wing, wing);
     rect (wingposX, bttmwingposY, wing, wing);
+    triangle (planeposX, planeposY -10, planeposX, planeposY, planeposX + 10, planeposY);
 
     // windows
     // for (int windowX = 25; windowX < 90; windowX += 30)
@@ -35,6 +36,7 @@ class Plane extends GameObject
     planeposX +=3;
     wingposX +=3;
     windowX +=3;
+    bombX +=3;
 
     //wrap
     if (planeposX > 590)

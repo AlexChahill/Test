@@ -16,6 +16,8 @@ Clouds clouds;
 Person person;
 Bomb bomb;
 
+boolean bombFall = false;
+
 void draw ()
 {
   environment.drawEnvironment ();
@@ -24,6 +26,8 @@ void draw ()
   clouds.drawClouds ();
   clouds.updateClouds ();
   person.drawPerson ();
-  bomb.update();
+  person.update ();
+  bomb.update ();
+  
 }
 
