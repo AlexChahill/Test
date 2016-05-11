@@ -17,14 +17,14 @@ class Plane extends GameObject
     rect (wingposX, bttmwingposY, wing, wing);
 
     // windows
-   // for (int windowX = 25; windowX < 90; windowX += 30)
+    // for (int windowX = 25; windowX < 90; windowX += 30)
     //{
-      stroke (0);
-      fill (0);
-      rect (windowX, windowY, window, window);
-      rect (windowX + 30, windowY, window, window);
-      rect (windowX + 60, windowY, window, window);
-      //windowX +=3;
+    stroke (0);
+    fill (0);
+    rect (windowX, windowY, window, window);
+    rect (windowX + 30, windowY, window, window);
+    rect (windowX + 60, windowY, window, window);
+    //windowX +=3;
     //}
     popMatrix ();
   }
@@ -47,6 +47,19 @@ class Plane extends GameObject
       window = 15;
       windowX = planeposX + 7.5;
     }
+
+    //Bomb
+    
+     if (keyPressed)
+  {
+    if (key == ' ')
+    { 
+      stroke (0);
+      fill (255,0,0);
+      rect (bombX, bombY, bomb, bomb);
+    }
+
   }
+}
 }
 

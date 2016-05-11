@@ -16,6 +16,11 @@ class GameObject
   float windowY = planeposY + 7.5;
   float window = 15;
   float windowX = 25;
+  
+  //bomb
+  float bombX = planeposX + 45;
+  float bombY = planeposY;
+  float bomb = 10;
 
   //clouds
   float r1 = random (.5, 2.5);
