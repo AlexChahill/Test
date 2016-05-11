@@ -18,12 +18,24 @@ class GameObject
   float windowX = 25;
 
   //clouds
-  float r = random (0, 200);
+  float r1 = random (0, 2.5);
+  float r2 = random (0, 2.5);
+  float r3 = random (0, 2.5);
+  float r4 = random (0, 2.5);
+
   float cloud1x = 30;
   float cloud1y = 20;
   float cloud2x = 40;
   float cloud2y = 30;
-  float cloudX = width - cloud1x;
-  float cloudY = 1*r;
+
+  float cloudX1 = width - cloud1x;
+  float cloudX2 = width - cloud1x;
+  float cloudX3 = width - cloud1x;
+  float cloudX4 = width - cloud1x;
+
+  float cloudY1 = random (0, 250);
+  float cloudY2 = random (0, 250);
+  float cloudY3 = random (0, 250);
+  float cloudY4 = random (0, 250);
 }
 
